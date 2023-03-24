@@ -94,3 +94,10 @@ Por último, si el tiempo y los conocimientos me lo permiten, o si alguien se an
 3. Utilizar el **modelo GPT-4** para mejorar los resultados y ampliar la cantidad de información que podemos dar al bot (aunque habría que ver si resulta rentable, ya que por ahora es unas seis veces más caro)
  2. Introducir prompts por **voz** y obtener respuestas sonoras del bot (para simular llamadas telefónicas con los personajes)
  3. Añadir un **avatar virtual de vídeo** (para simular videollamadas con los personajes)
+
+
+## Support
+
+Si te ha resultado útil, puedes invitarme a un café: [https://ko-fi.com/albadivarius](https://ko-fi.com/albadivarius)
+
+¡Gracias!
