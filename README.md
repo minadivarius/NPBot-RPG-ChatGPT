@@ -1,5 +1,7 @@
 # NPBot - Versión local
 
+![](https://storage.ko-fi.com/cdn/useruploads/display/994d8c2c-a36c-47f7-adec-47da169f5034_npbot.png)
+
 Este bot permite interactuar con **Personajes No Jugadores (NPCs) para juegos de rol y larp**, a través de la API de ChatGPT (en principio, en su modelo GPT-3.5-turbo, ya que aún no he tenido acceso a GPT-4).
 
 He podido desarrollarlo gracias a las explicaciones del genial [MoureDev](https://mouredev.com/) en su directo de Twich.
