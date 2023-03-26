@@ -100,6 +100,8 @@ Por último, si el tiempo y los conocimientos me lo permiten, o si alguien se an
 
 ## Support
 
-Si te ha resultado útil, puedes invitarme a un café: [https://ko-fi.com/albadivarius](https://ko-fi.com/albadivarius)
+Si te ha resultado útil, puedes invitarme a un café en [https://ko-fi.com/albadivarius](https://ko-fi.com/albadivarius)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C8JR7DH)
 
 ¡Gracias!
