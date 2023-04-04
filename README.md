@@ -96,6 +96,10 @@ Si quieres **limpiar el archivo**, solo tienes que borrar su contenido y guardar
 Puedes **editar** cómo se guardará esta información (por ejemplo, para cambiar las palabras "User: " y "Ordenador: ") editando la siguiente línea del código:
 `log_entry = f"[{timestamp}] User: {content}\n Ordenador: {response_content}\n"`
 
+## Aumentar temperatura desde el chat
+Como mecánica específica para el rol en vivo para el que fue creado, se ha introducido una forma de **subir la temperatura (creatividad) de ChatGPT a través de un comando específico en el propio chat**. Esto permite aumentar la variabilidad de sus respuestas, que se hacen más impredecibles hasta llegar a perder el sentido.
+
+Puedes configurar a tu gusto esta funcionalidad, e incluso borrarla del código si no necesitas utilizarla.
 
 ## ¿Funcionalidades futuras?
 Por último, si el tiempo y los conocimientos me lo permiten, o si alguien se anima a colaborar conmigo, estas son las funcionalidades que me gustaría explorar:
@@ -104,7 +108,6 @@ Por último, si el tiempo y los conocimientos me lo permiten, o si alguien se an
 3. Utilizar el **modelo GPT-4** para mejorar los resultados y ampliar la cantidad de información que podemos dar al bot (aunque habría que ver si resulta rentable, ya que por ahora es unas seis veces más caro)
 4. Introducir prompts por **voz** y obtener respuestas sonoras del bot (para simular llamadas telefónicas con los personajes)
 5. Añadir un **avatar virtual de vídeo** (para simular videollamadas con los personajes)
-6. Posibilidad de aumentar y disminuir la **temperatura** a través de un comando desde el propio chat.
 
 
 ## Support
