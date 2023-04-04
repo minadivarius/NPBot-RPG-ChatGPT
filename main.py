@@ -6,6 +6,7 @@ import math  # Para la barra de progreso
 import config  # Importar configuración con la key personal
 import mycontext  # Importar el prompt inicial del sistema del otro archivo
 import traceback  # Detectar errores
+from datetime import datetime
 
 
 # Función principal de la aplicación
@@ -13,6 +14,8 @@ import traceback  # Detectar errores
 def main():
 
     openai.api_key = config.api_key  # Establecer key personal
+
+    log_file = open("conversation_log.txt", "a")  # Abrir archivo de registro
 
     # Imprimir barra de progreso ficticia con la función definida más abajo
     numbers = [x * 5 for x in range(2000, 3000)]
@@ -73,6 +76,17 @@ def main():
         if response_content:
             print(
                 f"[cyan bold]\n\nOrdenador:[/cyan bold] [bright_cyan]{response_content}\n[/bright_cyan]")
+
+        timestamp = datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S")  # Obtiene la fecha y hora actual
+
+        # Crea una cadena con el mensaje y la marca de tiempo
+        log_entry = f"[{timestamp}] User: {content}\n Ordenador: {response_content}\n"
+
+        # Escribe la entrada de registro en el archivo
+        log_file.write(log_entry)
+
+    log_file.close()  # Cierra el archivo de registro al salir del bucle principal
 
 
 # Función de la barra de progreso ficticia
