@@ -88,14 +88,23 @@ Existen dos **comandos** especiales
 
 En un determinado punto de la conversación probablemente alcanzarás el **límite de memoria**. En este caso, surgirá un error, que puedes solucionar sin necesidad de reiniciar el programa, tan solo utilizando el comando "reset" para vaciar la memoria.
 
+## Registro de conversaciones
+El archivo de texto "conversation_log" **guarda automáticamente todas las conversaciones** que se generan con el uso del bot, para que puedas tener el registro de la interacción entre los jugadores y ChatGPT.
+
+Si quieres **limpiar el archivo**, solo tienes que borrar su contenido y guardarlo vacío, para que se vaya llenando con las futuras interacciones.
+
+Puedes **editar** cómo se guardará esta información (por ejemplo, para cambiar las palabras "User: " y "Ordenador: ") editando la siguiente línea del código:
+`log_entry = f"[{timestamp}] User: {content}\n Ordenador: {response_content}\n"`
+
 
 ## ¿Funcionalidades futuras?
 Por último, si el tiempo y los conocimientos me lo permiten, o si alguien se anima a colaborar conmigo, estas son las funcionalidades que me gustaría explorar:
 1. Conseguir que la **memoria** se reinicie sola automáticamente, sin necesidad de visualizar el error y tener que ejecutar el comando "reset"
 2. Posibilidad de **cambiar prompts iniciales** a través de otros comandos
 3. Utilizar el **modelo GPT-4** para mejorar los resultados y ampliar la cantidad de información que podemos dar al bot (aunque habría que ver si resulta rentable, ya que por ahora es unas seis veces más caro)
- 2. Introducir prompts por **voz** y obtener respuestas sonoras del bot (para simular llamadas telefónicas con los personajes)
- 3. Añadir un **avatar virtual de vídeo** (para simular videollamadas con los personajes)
+4. Introducir prompts por **voz** y obtener respuestas sonoras del bot (para simular llamadas telefónicas con los personajes)
+5. Añadir un **avatar virtual de vídeo** (para simular videollamadas con los personajes)
+6. Posibilidad de aumentar y disminuir la **temperatura** a través de un comando desde el propio chat.
 
 
 ## Support
