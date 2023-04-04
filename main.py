@@ -39,6 +39,7 @@ def main():
     # Contexto del asistente
     context = mycontext.context
     messages = [context]
+    temperatura = 1.2
 
     # Crear bucle para que nos permita seguir preguntando más de una vez
     while True:
@@ -59,12 +60,17 @@ def main():
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
-                temperature=1.1,
+                temperature=temperatura,
                 messages=messages)
         except Exception:
             print("Ha ocurrido un error")
             print(traceback.format_exc())
             continue
+
+        # Aumentar temperatura con cada ataque al Ordenador (solo para Project Darkia)
+        if content == "/c_attack-E563a145":
+            temperatura += 0.1
+            temperatura = min(temperatura, 2)
 
         # Variable para almacenar únicamente la respuesta del chatbot
         response_content = response.choices[0].message.content
@@ -76,6 +82,10 @@ def main():
         if response_content:
             print(
                 f"[cyan bold]\n\nOrdenador:[/cyan bold] [bright_cyan]{response_content}\n[/bright_cyan]")
+
+        # Aviso para los jugadores (solo Project Darkia)
+        if temperatura == 2:
+            print("/// El Ordenador está destactivado. ///")
 
         timestamp = datetime.now().strftime(
             "%Y-%m-%d %H:%M:%S")  # Obtiene la fecha y hora actual
