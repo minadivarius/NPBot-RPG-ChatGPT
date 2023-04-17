@@ -34,6 +34,7 @@ En esta tabla os resumo algunas de las **diferencias** que he encontrado entre e
 | Posible funcionalidad futura | Facilidad de alternar entre prompts con los comandos |
 | Hay que reiniciar el programa para ver cambios en el prompt inicial | Posibilidad de editar prompts sin reiniciar Discord |
 | - | Puedes montar varios bots dentro de la misma aplicación |
+| Mecánicas de juego con el aumento de la temperatura | - |
 
 
 # Instalación del bot local
