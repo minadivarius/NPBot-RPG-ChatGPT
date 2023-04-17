@@ -39,7 +39,7 @@ def main():
     # Contexto del asistente
     context = mycontext.context
     messages = [context]
-    temperatura = 1.2
+    temperatura = 1.1
 
     # Crear bucle para que nos permita seguir preguntando más de una vez
     while True:
